@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+    <div class="container">
+        <header><img src="./images/simbolos.png" alt="sinal maior">
+            <h1> Verificador de unidades</h1></header>
+        <h2>VERIFICANDO SE O PRIMEIRO NÚMERO É MENOR QUE O SEGUNDO</h2>
+        <form id="form-validacao">
+            <input type="number" id="primeiro-numero" required placeholder="Insira o 1º número"min="0" max="999999999"/> 
+            <input type="number" id="segundo-numero" required placeholder="Insira o 2º número" min="0" max="999999999"/>
+            <button type="submit">Verificar</button>
+        </form>
+    </div>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Primeiro número</th>
+                <th>Segundo número número</th>
+                <th>2ºN > 1ºN?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>4</th>
+                <th>8</th>
+                <th><span class="resultado reprovado" >Aprovado</span></th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
