@@ -17,7 +17,7 @@ function adicionaLinha() {
     let linha = '<tr>';
     linha += `<td>${inputPrimeiroNumero.value}</td>`;
     linha += `<td>${inputSegundoNumero.value}</td>`;
-    linha += `<td>${inputPrimeiroNumero.value < inputSegundoNumero.value ? 'Aprovado' : 'Reprovado'}</td>`;
+    linha += `<td>${parseInt(inputPrimeiroNumero.value) < parseInt(inputSegundoNumero.value) ? 'Aprovado' : 'Reprovado'}</td>`;
     linha += '</tr>';
 
 
